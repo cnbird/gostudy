@@ -24,7 +24,7 @@ func (hs HeroSlice) Len() int {
 // 实现Interface 接口 的Less 方法
 func (hs HeroSlice) Less(i, j int) bool {
 	//fmt.Println(i, j)
-	return hs[i].Age < hs[i].Age
+	return hs[i].Age < hs[j].Age
 }
 
 // 实现Interface 接口 的Swap 方法
